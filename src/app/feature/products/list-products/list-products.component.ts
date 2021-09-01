@@ -23,16 +23,16 @@ export class ListProductsComponent implements OnInit {
         this._categories = res.response.categories.sort((a: any, b: any) => (a.ordinal < b.ordinal ? -1 : 1));
         let arr:any = [];
         for (let a = 0; a < res.response.products.length; a++) {
-          const element = res.response.products[a].product_data;
-          element.category_id = element.categories[0].category_id;
-          element.ordinal = element.categories[0].ordinal;
+          const product = res.response.products[a].product_data;
+          product.category_id = product.categories[0].category_id;
+          product.ordinal = product.categories[0].ordinal;
           for (let i = 0; i < this._categories.length; i++) {
             const category = this._categories[i];
-            if (category.id == element.category_id) {
-              element.ordinal_Category = category.ordinal;
+            if (category.id == product.category_id) {
+              product.ordinal_Category = category.ordinal;
             }
           }
-          arr.push(element);
+          arr.push(product);
         }
         arr = arr.sort((a: any, b: any) => (a.ordinal < b.ordinal ? -1 : 1));
         this._products = arr;

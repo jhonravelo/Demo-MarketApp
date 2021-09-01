@@ -8,7 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ProductComponent implements OnInit {
 
-  _product:any = {};
+  _product: any = {};
 
   @Input()
   set data(val: any) {
