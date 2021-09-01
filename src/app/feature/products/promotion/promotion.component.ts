@@ -10,9 +10,9 @@ export class PromotionComponent implements OnInit {
   _promotion: any = {};
 
   @Input()
-  set data(val: any) {
-    if (val != undefined && val != null) {
-      this._promotion = val;
+  set data(Value: any) {
+    if (Value != undefined && Value != null) {
+      this._promotion = Value;
     }
   }
 

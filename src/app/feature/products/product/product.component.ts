@@ -11,9 +11,9 @@ export class ProductComponent implements OnInit {
   _product: any = {};
 
   @Input()
-  set data(val: any) {
-    if (val != undefined && val != null) {
-      this._product = val;
+  set data(Value: any) {
+    if (Value != undefined && Value != null) {
+      this._product = Value;
     }
   }
 
