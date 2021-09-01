@@ -1,6 +1,16 @@
 <div class="container">
-  <h3>Precios bajos siempre</h3>
-  <hr>
-  <app-product></app-product>
-  <app-promotion></app-promotion>
+  <div *ngFor="let categorie of _categories">
+    <h3>{{categorie.name}} </h3>
+    <hr>
+    <div *ngFor="let product of _products">
+      <div *ngIf="categorie.id === product.category_id">
+        <div *ngIf="product.kind === 1">
+          <app-product [data]="product"></app-product>
+        </div>
+        <div *ngIf="product.kind === 2">
+          <app-promotion [data]="product"></app-promotion>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
