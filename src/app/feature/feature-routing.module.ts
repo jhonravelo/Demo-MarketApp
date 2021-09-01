@@ -8,7 +8,7 @@ const routes: Routes = [
     path: 'products',
     component: ListProductsComponent,
     canActivate: [VerifyRoutingService],
-    loadChildren: () => import('./products/products.module').then(i => i.UsersModule),
+    loadChildren: () => import('./products/products.module').then(i => i.ProductsModule),
   }, {
     path: 'login',
     canActivate: [VerifyRoutingService],

@@ -1,0 +1,23 @@
+
+.content-product {
+    width: 100%;
+    min-width: auto;
+    height: calc(100vw * 0.8);
+    box-shadow: 0px 0px 24px -9px rgb(179 179 179);
+    border-radius: 8px;
+    margin-top: 16px;
+    border: 1px solid #e6e6e6;
+  }
+  
+  .content-product .panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: column;
+    height: 100%;
+  }
+  
+  .content-product .image {
+    height: 70%;
+    width: 100%;
+  }
