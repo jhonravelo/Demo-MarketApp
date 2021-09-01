@@ -21,7 +21,7 @@ export class ListProductsComponent implements OnInit {
     apiData.subscribe(res => {
       if (res.status == 200) {
         this._categories = res.response.categories.sort((a: any, b: any) => (a.ordinal < b.ordinal ? -1 : 1));
-        const arr:any = [];
+        let arr:any = [];
         for (let a = 0; a < res.response.products.length; a++) {
           const element = res.response.products[a].product_data;
           element.category_id = element.categories[0].category_id;
@@ -34,6 +34,7 @@ export class ListProductsComponent implements OnInit {
           }
           arr.push(element);
         }
+        arr = arr.sort((a: any, b: any) => (a.ordinal < b.ordinal ? -1 : 1));
         this._products = arr;
       }
     });
