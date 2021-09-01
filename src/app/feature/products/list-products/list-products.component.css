@@ -1,0 +1,120 @@
+.container {
+  height: 100%;
+  padding: 16px;
+}
+
+.container h3 {
+  margin: 4px;
+  color: #0063e5;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn-buy {
+  color: white;
+  background: #006eff;
+  width: 100%;
+  max-width: 80px;
+  min-width: 80px;
+  height: 35px;
+  padding: 4px;
+  border: none;
+  border-radius: 4px;
+  margin-right: 16px;
+}
+
+.content-product {
+  width: 100%;
+  min-width: auto;
+  height: calc(100vw * 0.8);
+  box-shadow: 0px 0px 24px -9px rgb(179 179 179);
+  border-radius: 8px;
+  margin-top: 16px;
+  border: 1px solid #e6e6e6;
+}
+
+.content-product .panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: column;
+  height: 100%;
+}
+
+.content-product .image {
+  height: 70%;
+  width: 100%;
+}
+
+.image img {
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+@media (min-width: 240px) {
+  .board-flex {
+    height: auto;
+    min-height: 30% !important;
+  }
+}
+
+.board-flex {
+  height: auto;
+  min-height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #ebebeb;
+}
+
+.board-flex .description {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  margin-left: 16px;
+}
+
+.price {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: #585858;
+}
+
+.content-promotion {
+  width: 100%;
+  min-width: auto;
+  height: calc(35vw * 1);
+  box-shadow: 0px 0px 24px -9px rgb(179 179 179);
+  border-radius: 8px;
+  margin-top: 16px;
+  border: 1px solid #e6e6e6;
+}
+
+.content-promotion .panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row;
+  height: 100%;
+}
+
+.content-promotion .image {
+  height: 70%;
+  width: 50%;
+}
+
+.content-promotion .action {
+display: flex;
+justify-content: center;
+}
+
+.content-promotion .panel .description {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  width: 90%;
+}

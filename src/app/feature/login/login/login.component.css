@@ -1,0 +1,27 @@
+.flex-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-flow: column;
+    padding: 16px;
+}
+
+.flex-container h3{
+    margin: 16px;
+    font: bold 17px Arial;
+    color: #424242;
+    font-size: 20px;
+}
+
+.btn-login{
+    color: white;
+    background: #5ea9ff;
+    width: 100%;
+    max-width: 170px;
+    min-width: 100px;
+    height: 28px;
+    padding: 4px;
+    border: none;
+    border-radius: 4px;
+}
